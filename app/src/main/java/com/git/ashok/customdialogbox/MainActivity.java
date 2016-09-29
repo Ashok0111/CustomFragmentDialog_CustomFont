@@ -19,7 +19,6 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void show(View v) {
-        Log.w("", "button");
         android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
         CustomDialogFragment alertdFragment = new CustomDialogFragment();
         String s = "Message";
@@ -27,6 +26,5 @@ public class MainActivity extends FragmentActivity {
         alertdFragment.CustomDialogFragment(s, t);
         alertdFragment.setCancelable(false);
         alertdFragment.show(fm, "");
-        Log.w("", "end of button");
     }
 }
